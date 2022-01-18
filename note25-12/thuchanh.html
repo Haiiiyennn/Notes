@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .column-left {
+            background-color: aquamarine;
+            width: 25%;
+            height: 500px;
+        }
+
+        .column-middle {
+            background-color: tomato;
+            width: 25%;
+            height: 500px;
+        }
+
+        .column-right-first {
+            background-color: pink;
+            width: 25%;
+            height: 500px;
+        }
+
+        .column-right-second {
+            background-color: rgb(210, 202, 245);
+            width: 25%;
+            height: 500px;
+        }
+
+        @media only screen and (max-width:1920px) {
+            .container {flex-wrap: wrap;}
+            .column-left {
+                width: 25%;
+            }
+            .column-middle {
+                width: 25%;
+            }
+            .column-right-first {
+                width: 25%;
+            }
+            .column-right-second {
+                width: 25%;
+            }
+        }
+        @media only screen and (max-width:1200px) {
+            .container {flex-wrap: wrap;}
+            .column-left {
+                width: 33%;
+            }
+            .column-middle {
+                width: 33%;
+            }
+            .column-right-first {
+                width: 34%;
+            }
+            .column-right-second {
+                width: 100%;
+            }
+        }
+
+        @media only screen and (max-width:350px) {
+            .container {flex-wrap: wrap;}
+            .column-left {
+                width: 100%;
+            }
+            .column-middle {
+                width: 100%;
+            }
+            .column-right-first {
+                width: 100%;
+            }
+            .column-right-second {
+                width: 100%;
+            }
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="column-left">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Necessitatibus officia a suscipit molestias molestiae.
+            Eaque tenetur assumenda officia iure sed impedit,
+            earum ducimus provident voluptatibus, dolore, soluta nihil accusamus rerum?
+        </div>
+        <div class="column-middle">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Necessitatibus officia a suscipit molestias molestiae.
+            Eaque tenetur assumenda officia iure sed impedit,
+            earum ducimus provident voluptatibus, dolore, soluta nihil accusamus rerum?
+        </div>
+        <div class="column-right-first">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Necessitatibus officia a suscipit molestias molestiae.
+            Eaque tenetur assumenda officia iure sed impedit,
+            earum ducimus provident voluptatibus, dolore, soluta nihil accusamus rerum?
+        </div>
+        <div class="column-right-second">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Necessitatibus officia a suscipit molestias molestiae.
+            Eaque tenetur assumenda officia iure sed impedit,
+            earum ducimus provident voluptatibus, dolore, soluta nihil accusamus rerum?
+        </div>
+    </div>
+</body>
+
+</html>
