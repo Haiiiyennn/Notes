@@ -11,35 +11,39 @@
             margin: 0;
             padding: 0;
         }
+
         .menu {
             width: 100%;
             background-color: antiquewhite;
             height: 100px;
         }
+
         .menu-ul {
             display: flex;
             list-style: none;
             height: 100%;
         }
 
-        .menu-ul>li>a{         
-            font-size: 30px;          
+        .menu-ul>li>a {
+            font-size: 30px;
             text-decoration: none;
-            font-family: Arial, Helvetica, sans-serif;          
-            text-transform: capitalize;  
+            font-family: Arial, Helvetica, sans-serif;
+            text-transform: capitalize;
             line-height: 100px;
             margin-right: 10px;
             padding: 30px 20px;
         }
-        .menu-ul>li>a:hover{
+
+        .menu-ul>li>a:hover {
             background-color: rgb(181, 223, 83);
         }
-        .center{
+
+        .center {
             text-align: center;
             height: 30px;
         }
 
-        .animal-children>a{
+        .animal-children>a {
             text-decoration: none;
             font-size: 20px;
             font-family: Arial, Helvetica, sans-serif;
@@ -49,13 +53,16 @@
             padding: 10px 10px;
             display: block;
         }
-        .animal-children{
+
+        .animal-children {
             background-color: antiquewhite;
             display: none;
         }
-        .animal:hover > .animal-children{
+
+        .animal:hover>.animal-children {
             display: block;
         }
+        
     </style>
 </head>
 
@@ -66,11 +73,10 @@
             <li><a href="#">science</a></li>
             <li><a href="#">life</a></li>
             <li class="animal"><a href="#">animal</a>
-            <div class="animal-children">
-               <a href="#">Lion</a>               
-                <a href="#">Tiger</a>
-            
-            </div>
+                <div class="animal-children">
+                    <a href="#">Lion</a>
+                    <a href="#">Tiger</a>
+                </div>
             </li>
         </ul>
     </div>
